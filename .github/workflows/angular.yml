@@ -19,16 +19,14 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-          cache: 'npm'
-          working-directory: fluentpos/src/client/
           
       - name: Install Dependencies
         run: npm install
-        working-directory: fluentpos/src/client/
+        working-directory: ./src/client/
     
       - name: Build Application
         run: npm run build
-        working-directory: fluentpos/src/client/
+        working-directory: ./src/client/
       
       - name: List Files in Distribution Directory
         run: ls -R ./dist
