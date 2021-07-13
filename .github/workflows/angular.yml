@@ -24,7 +24,7 @@ jobs:
         run: npm install
     
       - name: Build Application
-        run: npm run ci:build
+        run: npm run build
       
       - name: List Files in Distribution Directory
         run: ls -R ./dist
