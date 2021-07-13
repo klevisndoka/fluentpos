@@ -22,9 +22,6 @@ jobs:
           
       - name: Install Dependencies
         run: npm install
-          
-      - name: Run Unit Tests
-        run: npm test
     
       - name: Build Application
         run: npm run ci:build
