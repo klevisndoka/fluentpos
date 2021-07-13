@@ -27,6 +27,3 @@ jobs:
       - name: Build Application
         run: npm run build
         working-directory: ./src/client/
-      
-      - name: List Files in Distribution Directory
-        run: ls -R ./dist
